@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Source Sans Pro', sans-serif;
     color:black;
     line-height: 1.2;
-    background:linear-gradient(135deg,#e09,#d0e);
+    background:linear-gradient(135deg,rgb(238, 0, 153),rgb(221, 0, 238));
     line-height: 1;
   }
   ol, ul {
@@ -62,13 +62,11 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
         <App />
       </ThemeProvider>
     </RecoilRoot>
-  </React.StrictMode>
 );
 
