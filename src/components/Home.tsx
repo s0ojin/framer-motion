@@ -20,7 +20,7 @@ const BtnWrapper = styled.div`
   gap: 30px;
 `;
 
-const ExerciseBtn = styled.button`
+const Btn = styled.button`
   width: 200px;
   height: 70px;
   text-transform: uppercase;
@@ -30,25 +30,32 @@ const ExerciseBtn = styled.button`
   }
 `;
 
-const CardAnimationBtn = styled(ExerciseBtn)`
-
-`;
 
 function Home() {
   return(
     <Box>
       <h1>welcome animation world!</h1>
       <BtnWrapper>
-        <ExerciseBtn>
+        <Btn>
           <Link to="/exercise">
             exersice
           </Link>
-        </ExerciseBtn>
-        <CardAnimationBtn>
+        </Btn>
+        <Btn>
           <Link to="/card">
             card animation
           </Link>
-        </CardAnimationBtn>
+        </Btn>
+        <Btn>
+          <Link to="/layout">
+            layout animation
+          </Link>
+        </Btn>
+        <Btn>
+          <Link to="/final">
+            final project
+          </Link>
+        </Btn>
       </BtnWrapper>
     </Box>
   )
